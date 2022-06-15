@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/verification.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <nav class="text-center">
+        <img src="imgs/logo.png" alt="" class="logo">
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4 pt-5">
+                <div class="card pb-2">
+                    <div class="card-body">
+                        <h3 class="card-title text-center ">Verify</h3>
+                        <form method="PUT">
+                            <div class="form-group">
+                                <label for="otp" class="pb-2 fw-500">Please enter your OTP code</label>
+                                <input type="text" class="form-control position-relative" id="otp" name="otp" placeholder="OTP Code" required >
+                            </div>
+                            <button type="button" class="btn rounded-pill main-btn mt-3 col-12" id="form">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/verify.js"></script>
+</body>
+</html>

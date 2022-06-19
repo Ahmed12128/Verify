@@ -5,8 +5,9 @@ function verify() {
     window.location.href = "../index.html";
 }
 VerifyInput.onblur = function() {
+    if(VerifyInput.validity.valid === true) {
 axios.put('https://api-dev.zumrafood.com/auth/otp-verify',{
-    otp:"https://api-dev.zumrafood.com/auth/otp-request",
+    otp:numValue,
 })
 .then (response => {
     console.log(response);
@@ -25,4 +26,4 @@ if (VerifyInput.value === "")  {
     console.log("true");
     }else{
         console.log("false");
-    }}
+    }}}
